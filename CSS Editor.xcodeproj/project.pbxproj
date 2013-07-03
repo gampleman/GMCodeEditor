@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6C29CD31784612300FB9E4C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C29CD21784612300FB9E4C /* Cocoa.framework */; };
+		F6C29CDD1784612300FB9E4C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6C29CDB1784612300FB9E4C /* InfoPlist.strings */; };
+		F6C29CDF1784612300FB9E4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C29CDE1784612300FB9E4C /* main.m */; };
+		F6C29CE31784612300FB9E4C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F6C29CE11784612300FB9E4C /* Credits.rtf */; };
+		F6C29CE61784612300FB9E4C /* GMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C29CE51784612300FB9E4C /* GMDocument.m */; };
+		F6C29CE91784612300FB9E4C /* GMDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C29CE71784612300FB9E4C /* GMDocument.xib */; };
+		F6C29CEC1784612300FB9E4C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6C29CEA1784612300FB9E4C /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F6C29CCF1784612300FB9E4C /* CSS Editor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSS Editor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C29CD21784612300FB9E4C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F6C29CD51784612300FB9E4C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F6C29CD61784612300FB9E4C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F6C29CD71784612300FB9E4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6C29CDA1784612300FB9E4C /* CSS Editor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSS Editor-Info.plist"; sourceTree = "<group>"; };
+		F6C29CDC1784612300FB9E4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6C29CDE1784612300FB9E4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6C29CE01784612300FB9E4C /* CSS Editor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSS Editor-Prefix.pch"; sourceTree = "<group>"; };
+		F6C29CE21784612300FB9E4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F6C29CE41784612300FB9E4C /* GMDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMDocument.h; sourceTree = "<group>"; };
+		F6C29CE51784612300FB9E4C /* GMDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMDocument.m; sourceTree = "<group>"; };
+		F6C29CE81784612300FB9E4C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GMDocument.xib; sourceTree = "<group>"; };
+		F6C29CEB1784612300FB9E4C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6C29CCC1784612300FB9E4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C29CD31784612300FB9E4C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6C29CC61784612300FB9E4C = {
+			isa = PBXGroup;
+			children = (
+				F6C29CD81784612300FB9E4C /* CSS Editor */,
+				F6C29CD11784612300FB9E4C /* Frameworks */,
+				F6C29CD01784612300FB9E4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6C29CD01784612300FB9E4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6C29CCF1784612300FB9E4C /* CSS Editor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6C29CD11784612300FB9E4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6C29CD21784612300FB9E4C /* Cocoa.framework */,
+				F6C29CD41784612300FB9E4C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6C29CD41784612300FB9E4C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6C29CD51784612300FB9E4C /* AppKit.framework */,
+				F6C29CD61784612300FB9E4C /* CoreData.framework */,
+				F6C29CD71784612300FB9E4C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F6C29CD81784612300FB9E4C /* CSS Editor */ = {
+			isa = PBXGroup;
+			children = (
+				F6C29CE41784612300FB9E4C /* GMDocument.h */,
+				F6C29CE51784612300FB9E4C /* GMDocument.m */,
+				F6C29CE71784612300FB9E4C /* GMDocument.xib */,
+				F6C29CEA1784612300FB9E4C /* MainMenu.xib */,
+				F6C29CD91784612300FB9E4C /* Supporting Files */,
+			);
+			path = "CSS Editor";
+			sourceTree = "<group>";
+		};
+		F6C29CD91784612300FB9E4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C29CDA1784612300FB9E4C /* CSS Editor-Info.plist */,
+				F6C29CDB1784612300FB9E4C /* InfoPlist.strings */,
+				F6C29CDE1784612300FB9E4C /* main.m */,
+				F6C29CE01784612300FB9E4C /* CSS Editor-Prefix.pch */,
+				F6C29CE11784612300FB9E4C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6C29CCE1784612300FB9E4C /* CSS Editor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C29CEF1784612300FB9E4C /* Build configuration list for PBXNativeTarget "CSS Editor" */;
+			buildPhases = (
+				F6C29CCB1784612300FB9E4C /* Sources */,
+				F6C29CCC1784612300FB9E4C /* Frameworks */,
+				F6C29CCD1784612300FB9E4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CSS Editor";
+			productName = "CSS Editor";
+			productReference = F6C29CCF1784612300FB9E4C /* CSS Editor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6C29CC71784612300FB9E4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Jakub Hampl";
+			};
+			buildConfigurationList = F6C29CCA1784612300FB9E4C /* Build configuration list for PBXProject "CSS Editor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6C29CC61784612300FB9E4C;
+			productRefGroup = F6C29CD01784612300FB9E4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6C29CCE1784612300FB9E4C /* CSS Editor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6C29CCD1784612300FB9E4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C29CDD1784612300FB9E4C /* InfoPlist.strings in Resources */,
+				F6C29CE31784612300FB9E4C /* Credits.rtf in Resources */,
+				F6C29CE91784612300FB9E4C /* GMDocument.xib in Resources */,
+				F6C29CEC1784612300FB9E4C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6C29CCB1784612300FB9E4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C29CDF1784612300FB9E4C /* main.m in Sources */,
+				F6C29CE61784612300FB9E4C /* GMDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F6C29CDB1784612300FB9E4C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6C29CDC1784612300FB9E4C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6C29CE11784612300FB9E4C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6C29CE21784612300FB9E4C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F6C29CE71784612300FB9E4C /* GMDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6C29CE81784612300FB9E4C /* en */,
+			);
+			name = GMDocument.xib;
+			sourceTree = "<group>";
+		};
+		F6C29CEA1784612300FB9E4C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6C29CEB1784612300FB9E4C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6C29CED1784612300FB9E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F6C29CEE1784612300FB9E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F6C29CF01784612300FB9E4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSS Editor/CSS Editor-Prefix.pch";
+				INFOPLIST_FILE = "CSS Editor/CSS Editor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6C29CF11784612300FB9E4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSS Editor/CSS Editor-Prefix.pch";
+				INFOPLIST_FILE = "CSS Editor/CSS Editor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6C29CCA1784612300FB9E4C /* Build configuration list for PBXProject "CSS Editor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C29CED1784612300FB9E4C /* Debug */,
+				F6C29CEE1784612300FB9E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6C29CEF1784612300FB9E4C /* Build configuration list for PBXNativeTarget "CSS Editor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C29CF01784612300FB9E4C /* Debug */,
+				F6C29CF11784612300FB9E4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6C29CC71784612300FB9E4C /* Project object */;
+}

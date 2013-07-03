@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CSS Editor' target in the 'CSS Editor' project
+//
+
+#ifdef __OBJC__
+  #import <Cocoa/Cocoa.h>
+#endif
