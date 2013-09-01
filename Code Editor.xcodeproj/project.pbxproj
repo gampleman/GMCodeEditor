@@ -279,7 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "git checkout gh-pages\ngit merge master -m \"Update docs\"\nURL=\"http://code.gampleman.eu/GMCodeEditor/help/publish/\"\n/usr/local/bin/appledoc --project-name \"Code Editor\" --project-company \"Jakub Hampl\" --company-id \"eu.gampleman\" --output \"./help\" --warn-undocumented-object --index-desc ./index.md --no-repeat-first-par --include ./Guides --ignore \"*.m\" --logformat xcode --exit-threshold 2 --keep-intermediate-files --docset-atom-filename \"code-editor.atom\" --docset-feed-url \"${URL}%DOCSETATOMFILENAME\" --docset-package-url \"${URL}%DOCSETPACKAGEFILENAME\" --docset-fallback-url \"${URL}\" --publish-docset   ./GMCodeEditor\ngit add help\ngit commit -m \"Updated docs\"\ngit checkout master\nrm -r help\n";
+			shellScript = "URL=\"http://code.gampleman.eu/GMCodeEditor/help/publish/\"\nmkdir -p /tmp/adhelp\n/usr/local/bin/appledoc --project-name \"Code Editor\" --project-company \"Jakub Hampl\" --company-id \"eu.gampleman\" --output /tmp/adhelp --warn-undocumented-object --index-desc ./index.md --no-repeat-first-par --include ./Guides --ignore \"*.m\" --logformat xcode --exit-threshold 2 --keep-intermediate-files --docset-atom-filename \"code-editor.atom\" --docset-feed-url \"${URL}%DOCSETATOMFILENAME\" --docset-package-url \"${URL}%DOCSETPACKAGEFILENAME\" --docset-fallback-url \"${URL}\" --publish-docset   ./GMCodeEditor\ngit checkout gh-pages\ncp -r /tmp/adhelp\ngit add .\ngit commit -m \"Updated docs\"\ngit checkout master\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
