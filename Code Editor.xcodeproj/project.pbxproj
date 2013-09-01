@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		F659DD7017D338FF007A6AC7 /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F659DD7317D338FF007A6AC7 /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				F659DD7417D33909007A6AC7 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Documentation;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		87FCD8DA82054BF699BB9089 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9594C2259A1455290D1CCF3 /* libPods.a */; };
 		F68A348517B950B600DBE817 /* Code Editor-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F68A346417B950B600DBE817 /* Code Editor-Info.plist */; };
@@ -181,7 +195,6 @@
 				F6C29CCC1784612300FB9E4C /* Frameworks */,
 				F6C29CCD1784612300FB9E4C /* Resources */,
 				7079BFCA74A64EE6BB2A8855 /* Copy Pods Resources */,
-				F68A349C17C8FCB700DBE817 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -215,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				F6C29CCE1784612300FB9E4C /* Code Editor */,
+				F659DD7017D338FF007A6AC7 /* Documentation */,
 			);
 		};
 /* End PBXProject section */
@@ -268,9 +282,9 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 		};
-		F68A349C17C8FCB700DBE817 /* ShellScript */ = {
+		F659DD7417D33909007A6AC7 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
@@ -279,7 +293,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "URL=\"http://code.gampleman.eu/GMCodeEditor/help/publish/\"\nmkdir -p /tmp/adhelp\n/usr/local/bin/appledoc --project-name \"Code Editor\" --project-company \"Jakub Hampl\" --company-id \"eu.gampleman\" --output /tmp/adhelp --warn-undocumented-object --index-desc ./index.md --no-repeat-first-par --include ./Guides --ignore \"*.m\" --logformat xcode --exit-threshold 2 --keep-intermediate-files --docset-atom-filename \"code-editor.atom\" --docset-feed-url \"${URL}%DOCSETATOMFILENAME\" --docset-package-url \"${URL}%DOCSETPACKAGEFILENAME\" --docset-fallback-url \"${URL}\" --publish-docset   ./GMCodeEditor\ngit checkout gh-pages\ncp -r /tmp/adhelp\ngit add .\ngit commit -m \"Updated docs\"\ngit checkout master\n";
+			shellScript = "URL=\"http://code.gampleman.eu/GMCodeEditor/help/publish/\"\nmkdir -p /tmp/adhelp\n/usr/local/bin/appledoc --project-name \"Code Editor\" --project-company \"Jakub Hampl\" --company-id \"eu.gampleman\" --output /tmp/adhelp --warn-undocumented-object --index-desc ./index.md --no-repeat-first-par --include ./Guides --ignore \"*.m\" --logformat xcode --exit-threshold 2 --keep-intermediate-files --docset-atom-filename \"code-editor.atom\" --docset-feed-url \"${URL}%DOCSETATOMFILENAME\" --docset-package-url \"${URL}%DOCSETPACKAGEFILENAME\" --docset-fallback-url \"${URL}\" --publish-docset   ./GMCodeEditor\ngit checkout gh-pages\ncp -r /tmp/adhelp/html .\ncp -r /tmp/adhelp/docset .\ncp -r /tmp/adhelp/publish .\ngit add .\ngit commit -m \"Updated docs\"\ngit checkout master\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -337,6 +351,20 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F659DD7117D338FF007A6AC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F659DD7217D338FF007A6AC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		F6C29CED1784612300FB9E4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -427,6 +455,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F659DD7317D338FF007A6AC7 /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F659DD7117D338FF007A6AC7 /* Debug */,
+				F659DD7217D338FF007A6AC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F6C29CCA1784612300FB9E4C /* Build configuration list for PBXProject "Code Editor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

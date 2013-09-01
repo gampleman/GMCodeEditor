@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>eu.gampleman.Code-Editor</string>
+	<key>CFBundleName</key>
+	<string>Code Editor Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	
+	<key>DocSetFallbackURL</key>
+	<string>http://code.gampleman.eu/GMCodeEditor/help/publish/</string>
+	<key>DocSetFeedName</key>
+	<string>Code Editor Documentation</string>
+	<key>DocSetFeedURL</key>
+	<string>http://code.gampleman.eu/GMCodeEditor/help/publish/code-editor.atom</string>
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>eu.gampleman.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>Jakub Hampl</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2013 Jakub Hampl. All rights reserved.</string>
+</dict>
+</plist>

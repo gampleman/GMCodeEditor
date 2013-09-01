@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F6C29CCE1784612300FB9E4C"
-               BuildableName = "Code Editor.app"
-               BlueprintName = "Code Editor"
+               BlueprintIdentifier = "F659DD7017D338FF007A6AC7"
+               BuildableName = "Documentation"
+               BlueprintName = "Documentation"
                ReferencedContainer = "container:Code Editor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F6C29D3F179570FD00FB9E4C"
-               BuildableName = "Code Editor Tests.octest"
-               BlueprintName = "Code Editor Tests"
-               ReferencedContainer = "container:Code Editor.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F6C29CCE1784612300FB9E4C"
-            BuildableName = "Code Editor.app"
-            BlueprintName = "Code Editor"
-            ReferencedContainer = "container:Code Editor.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -58,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F6C29CCE1784612300FB9E4C"
-            BuildableName = "Code Editor.app"
-            BlueprintName = "Code Editor"
-            ReferencedContainer = "container:Code Editor.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -76,15 +48,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F6C29CCE1784612300FB9E4C"
-            BuildableName = "Code Editor.app"
-            BlueprintName = "Code Editor"
-            ReferencedContainer = "container:Code Editor.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

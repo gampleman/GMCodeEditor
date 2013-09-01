@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GMAutoCompleteTextView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GMAutoCompleteTextView</TokenIdentifier>
+			<Abstract type="html">GMAutoCompleteTextView is a general purpose autocompletion text component. It allows for sofisticated customization,
+mostly through subclassing, which is required for proper usage of this component.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/doc/Autocompletion</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/setMatchingAlgorithm:</TokenIdentifier>
+			<Abstract type="html">The matching algorithm that item:matchesFilter: will use.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/item:matchesFilter:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property GMMatchingAlgorithm matchingAlgorithm</Declaration>
+			
+			
+			<Anchor>//api/name/matchingAlgorithm</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GMAutoCompleteTextView/matchingAlgorithm</TokenIdentifier>
+			<Abstract type="html">The matching algorithm that item:matchesFilter: will use.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/item:matchesFilter:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>@property GMMatchingAlgorithm matchingAlgorithm</Declaration>
+			
+			
+			<Anchor>//api/name/matchingAlgorithm</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/autocompletionListForTrigger:</TokenIdentifier>
+			<Abstract type="html">Returns the list of autocompletions.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/triggerForCurrentPosition</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSArray *)autocompletionListForTrigger:(id)trigger</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>trigger</Name>
+					<Abstract type="html">A context object returned by triggerForCurrentPosition.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An array of autocompletion items. Without overriding cellTypeForTrigger:object: this should be an array of strings, otherwise it can be an array of arbitrary objects, which your celltype should be able to display to the user. This object shoud respond to -key, otherwise you may need to override textForObject:</Abstract></ReturnValue>
+			<Anchor>//api/name/autocompletionListForTrigger:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/cellTypeForTrigger:object:</TokenIdentifier>
+			<Abstract type="html">Provide an identifier for a cell nib to be loaded for displaying in the autocompletion window.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)cellTypeForTrigger:(id)trigger object:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>trigger</Name>
+					<Abstract type="html">The context object for the autocompletion (that is whatever triggerForCurrentPosition returns).</Abstract>
+				</Parameter><Parameter>
+					<Name>object</Name>
+					<Abstract type="html">The object that is being displayed (this is an element from an array that autocompletionListForTrigger: returns).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string identifier for a cell type, which is both the nib name and the identifier property of the NSTableCellView contained within.</Abstract></ReturnValue>
+			<Anchor>//api/name/cellTypeForTrigger:object:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/triggerForCurrentPosition</TokenIdentifier>
+			<Abstract type="html">Detects if and what kind of autocompletion is relevant.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>			
+			
+			<Declaration>- (id)triggerForCurrentPosition</Declaration>
+			
+			<ReturnValue><Abstract type="html">If no autocompletion should take place, the method must return nil. Otherwise it can return an arbitrary object, that will be used for identifiying the type of autocomletion necessary.</Abstract></ReturnValue>
+			<Anchor>//api/name/triggerForCurrentPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/textForObject:</TokenIdentifier>
+			<Abstract type="html">Gives a string to actually autocomplete for a selected object.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)textForObject:(id)object</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>object</Name>
+					<Abstract type="html">An autocomplete list object (this is an element from an array that autocompletionListForTrigger: returns).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A string that will be used for actually autocompleting in the text field.</Abstract></ReturnValue>
+			<Anchor>//api/name/textForObject:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/rangeForCurrentPosition</TokenIdentifier>
+			<Abstract type="html">Gives a range of the text that has already been autocompleted.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>			
+			
+			<Declaration>- (NSRange)rangeForCurrentPosition</Declaration>
+			
+			<ReturnValue><Abstract type="html">A NSRange showing the already typed in filter. Returning a zero length selection will make the autocomplete window disapear.</Abstract></ReturnValue>
+			<Anchor>//api/name/rangeForCurrentPosition</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/item:matchesFilter:</TokenIdentifier>
+			<Abstract type="html">Provides a score based filtering and ordering.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/GMAutoCompleteTextView/matchingAlgorithm</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (double)item:(id)item matchesFilter:(NSString *)filter</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>item</Name>
+					<Abstract type="html">The object which is part of the array returned by autocompletionListForTrigger:.</Abstract>
+				</Parameter><Parameter>
+					<Name>filter</Name>
+					<Abstract type="html">What has been already typed. (NB: this is equal to @autocompleteFilter, but passed in for convenience).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A score between &lt;0,1&gt;, such that scores below 0.1 will not be shown, and the autocompletion list will be
+sorted based on the score.</Abstract></ReturnValue>
+			<Anchor>//api/name/item:matchesFilter:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/autocompletionIsActive</TokenIdentifier>
+			<Abstract type="html">Indicates whether the autocomplete is being active at the moment.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)autocompletionIsActive</Declaration>
+			
+			<ReturnValue><Abstract type="html">True when the window is showing and false otherwise.</Abstract></ReturnValue>
+			<Anchor>//api/name/autocompletionIsActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMAutoCompleteTextView/setAutocompleteFilter:</TokenIdentifier>
+			<Abstract type="html">The string already typed.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *autocompleteFilter</Declaration>
+			
+			
+			<Anchor>//api/name/autocompleteFilter</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GMAutoCompleteTextView/autocompleteFilter</TokenIdentifier>
+			<Abstract type="html">The string already typed.</Abstract>
+			<DeclaredIn>GMAutoCompleteTextView.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) NSString *autocompleteFilter</Declaration>
+			
+			
+			<Anchor>//api/name/autocompleteFilter</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>
