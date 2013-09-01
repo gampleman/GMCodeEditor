@@ -34,7 +34,7 @@ Well kind of. You need to have the appropriate language file included in your pr
 
 ## Documentation
 
-The aim of this project is to have well written documentation, which you can find at http://code.gampleman.eu/GMCodeEditor.
+The aim of this project is to have well written documentation, which you can find at http://code.gampleman.eu/GMCodeEditor/html.
 
 ## Contributing
 
