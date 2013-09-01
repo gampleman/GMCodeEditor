@@ -36,7 +36,7 @@
 @private
   NoodleLineNumberView	*_lineNumberView;
   GMSyntaxHighlighter *_syntaxHighlighter;
-  NSDictionary *_autocompletes;
+  //NSDictionary *_autocompletes;
   NSDictionary *_language;
 }
 

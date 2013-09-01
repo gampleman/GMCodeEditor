@@ -104,7 +104,7 @@
 - (void)setLanguage:(id)lang
 {
   if ([lang isKindOfClass: [NSString class]]) {
-    _language = [GMLanguage languageFromBundleWithName: lang];
+    _language = [GMLanguage languageFromBundleWithName: (NSString *)lang];
   } else {
     _language = lang;
   }
@@ -260,12 +260,13 @@
 
 - (NSArray *)autocompletionListForTrigger: (id)trigger
 {
-  if(_autocompletes) {
-    return _autocompletes[trigger];
-  } else {
-    _autocompletes = [NSDictionary dictionaryWithContentsOfFile: [[NSBundle mainBundle] pathForResource: @"css" ofType: @"autocomplete"]];
-    return _autocompletes[trigger];
-  }
+//  if(_autocompletes) {
+//    return _autocompletes[trigger];
+//  } else {
+//    _autocompletes = [NSDictionary dictionaryWithContentsOfFile: [[NSBundle mainBundle] pathForResource: @"css" ofType: @"autocomplete"]];
+//    return _autocompletes[trigger];
+//  }
+  return _language[@"autocompletion"][trigger];
 }
 
 - (NSString *)textForObject: (id) object

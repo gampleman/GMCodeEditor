@@ -181,6 +181,7 @@
 				F6C29CCC1784612300FB9E4C /* Frameworks */,
 				F6C29CCD1784612300FB9E4C /* Resources */,
 				7079BFCA74A64EE6BB2A8855 /* Copy Pods Resources */,
+				F68A349C17C8FCB700DBE817 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -266,6 +267,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		F68A349C17C8FCB700DBE817 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git checkout gh-pages\ngit merge master -m \"Update docs\"\nURL=\"http://code.gampleman.eu/GMCodeEditor/help/publish/\"\n/usr/local/bin/appledoc --project-name \"Code Editor\" --project-company \"Jakub Hampl\" --company-id \"eu.gampleman\" --output \"./help\" --warn-undocumented-object --index-desc ./index.md --no-repeat-first-par --include ./Guides --ignore \"*.m\" --logformat xcode --exit-threshold 2 --keep-intermediate-files --docset-atom-filename \"code-editor.atom\" --docset-feed-url \"${URL}%DOCSETATOMFILENAME\" --docset-package-url \"${URL}%DOCSETPACKAGEFILENAME\" --docset-fallback-url \"${URL}\" --publish-docset   ./GMCodeEditor\ngit add help\ngit commit -m \"Updated docs\"\ngit checkout master\nrm -r help\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
