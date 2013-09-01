@@ -7,7 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "GMCodeEditor.h"
 
 @interface GMDocument : NSDocument
+{
+  IBOutlet GMCodeEditor *textView;
+  NSAttributedString *_loadedText;
+}
 
 @end
