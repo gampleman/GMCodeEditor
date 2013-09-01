@@ -1,0 +1,761 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>GMTheme Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 840)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Code Editor </a></h1>
+				<a id="developerHome" href="../index.html">Jakub Hampl</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">GMTheme Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/themeAtPath:">&nbsp;&nbsp;&nbsp;&nbsp;+ themeAtPath:</option>
+	
+	<option value="//api/name/themeAtURL:">&nbsp;&nbsp;&nbsp;&nbsp;+ themeAtURL:</option>
+	
+	<option value="//api/name/themeFromBundleWithName:">&nbsp;&nbsp;&nbsp;&nbsp;+ themeFromBundleWithName:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/defaultAttributes">&nbsp;&nbsp;&nbsp;&nbsp;- defaultAttributes</option>
+	
+	<option value="//api/name/formatString:forToken:">&nbsp;&nbsp;&nbsp;&nbsp;- formatString:forToken:</option>
+	
+	<option value="//api/name/initWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDictionary:</option>
+	
+	<option value="//api/name/setValue:forAttribute:inToken:">&nbsp;&nbsp;&nbsp;&nbsp;- setValue:forAttribute:inToken:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a theme from a filesystem representation">Creating a theme from a filesystem representation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a theme programatically">Creating a theme programatically</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Using a theme">Using a theme</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/themeAtPath:">themeAtPath:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/themeAtURL:">themeAtURL:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/themeFromBundleWithName:">themeFromBundleWithName:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultAttributes">defaultAttributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/formatString:forToken:">formatString:forToken:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDictionary:">initWithDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setValue:forAttribute:inToken:">setValue:forAttribute:inToken:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="GMTheme Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">GMTheme Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">GMTheme.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>GMTheme represents a syntax highlighting theme. The responsibilities of this class include loading a
+representation of a theme from a stored file system location as well as actually formatting strings.</p>
+
+<p>If you wish to subclass or replace GMTheme in your application (a usefull alternative in some applications
+would surely be a NSUserDefaults based variant for allowing users to customize the theme), the only method
+that this object has to respond to is <a href="#//api/name/formatString:forToken:">formatString:forToken:</a>. This method must return an appropriately
+formated NSAttributedString based on the token name. It also must set the custom attribute <code>GMToken</code> to the
+value of the token.</p>
+
+<h2>Serialization Format</h2>
+
+<p>d</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating a theme from a filesystem representation" name="task_Creating a theme from a filesystem representation"></a>
+						<h3 class="subsubtitle task-title">Creating a theme from a filesystem representation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/themeAtURL:">+&nbsp;themeAtURL:</a></code>
+		<span class="tooltip"><p>Loads a theme plist from a given URL.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/themeAtPath:">+&nbsp;themeAtPath:</a></code>
+		<span class="tooltip"><p>Loads a theme plist from a given path.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/themeFromBundleWithName:">+&nbsp;themeFromBundleWithName:</a></code>
+		<span class="tooltip"><p>Loads a theme plist from the application bundle.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating a theme programatically" name="task_Creating a theme programatically"></a>
+						<h3 class="subsubtitle task-title">Creating a theme programatically</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDictionary:">&ndash;&nbsp;initWithDictionary:</a></code>
+		<span class="tooltip"><p>Processes a dictionary, turning certain key value pairs into the appropriate data types for NSAttributedString.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setValue:forAttribute:inToken:">&ndash;&nbsp;setValue:forAttribute:inToken:</a></code>
+		<span class="tooltip"><p>Modifies a property for a token without processing.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Using a theme" name="task_Using a theme"></a>
+						<h3 class="subsubtitle task-title">Using a theme</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/formatString:forToken:">&ndash;&nbsp;formatString:forToken:</a></code>
+		<span class="tooltip"><p>Returns a formatted string based on the theme settings for the given token.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultAttributes">&ndash;&nbsp;defaultAttributes</a></code>
+		<span class="tooltip"><p>Returns the attributes that should be used for the default string.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/themeAtPath:" title="themeAtPath:"></a>
+	<h3 class="subsubtitle method-title">themeAtPath:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads a theme plist from a given path.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)themeAtPath:(NSString *)<em>path</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>path</em></dt>
+			<dd><p>The accessible filesystem path where to find the theme declaration.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a new GMTheme instance if the file was found and parsed properly, otherwise nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GMTheme.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/themeAtURL:" title="themeAtURL:"></a>
+	<h3 class="subsubtitle method-title">themeAtURL:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads a theme plist from a given URL.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)themeAtURL:(NSURL *)<em>url</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>The accessible url where to find the theme declaration.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a new GMTheme instance if the file was found and parsed properly, otherwise nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GMTheme.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/themeFromBundleWithName:" title="themeFromBundleWithName:"></a>
+	<h3 class="subsubtitle method-title">themeFromBundleWithName:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Loads a theme plist from the application bundle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)themeFromBundleWithName:(NSString *)<em>name</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the theme.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a new GMTheme dictionary instance if the file was found and parsed properly, otherwise nil.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is a useful shorthand method when using the provided theme bundles as these will by default reside
+in the applications resource folder and have the <code>.theme</code> extension. This method thus allows to find such
+bundles simply by their theme name.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GMTheme.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultAttributes" title="defaultAttributes"></a>
+	<h3 class="subsubtitle method-title">defaultAttributes</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the attributes that should be used for the default string.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)defaultAttributes</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A dictionary of attributes that go into NSAttributedString</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default string is the string that isn&rsquo;t categorized as any particular token.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GMTheme.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/formatString:forToken:" title="formatString:forToken:"></a>
+	<h3 class="subsubtitle method-title">formatString:forToken:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a formatted string based on the theme settings for the given token.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSAttributedString *)formatString:(NSAttributedString *)<em>string</em> forToken:(NSString *)<em>token</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>The input string that should be formatted.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>token</em></dt>
+			<dd><p>The name of the token which should match the <a href="../Classes/GMLanguage.html">language</a> definition.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An attributed string with appropriate formatting applied.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Also has to set the custom attribute <code>GMToken</code> with the token string in order for other methods to
+be able to directly understand the parse.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GMTheme.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDictionary:" title="initWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">initWithDictionary:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Processes a dictionary, turning certain key value pairs into the appropriate data types for NSAttributedString.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDictionary:(NSDictionary *)<em>dict</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dict</em></dt>
+			<dd><p>The theme definition dictionary.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Returns a new GMTheme.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GMTheme.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setValue:forAttribute:inToken:" title="setValue:forAttribute:inToken:"></a>
+	<h3 class="subsubtitle method-title">setValue:forAttribute:inToken:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Modifies a property for a token without processing.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setValue:(id)<em>value</em> forAttribute:(NSString *)<em>attribute</em> inToken:(NSString *)<em>token</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><p>The value of the attribute.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>attribute</em></dt>
+			<dd><p>A key that will go into NSAttributedString&rsquo;s attributes property.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>token</em></dt>
+			<dd><p>The token you want this setting to apply to. Use <code>*</code> to modify the <a href="#//api/name/defaultAttributes">defaultAttributes</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is usefull for specifying things that the current format doesn&rsquo;t support like colors with alpha values or fonts created with a matrix.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">GMTheme.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Jakub Hampl. All rights reserved. (Last updated: 2013-09-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 840)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="docs/Guides/LanguageReference.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/doc/LanguageReference</TokenIdentifier>
+			<Abstract type="html"># Language Document Format Reference</Abstract>
+			<DeclaredIn>LanguageReference-template.md</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>
