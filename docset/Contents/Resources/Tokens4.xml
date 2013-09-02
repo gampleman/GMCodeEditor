@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GMCodeEditor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GMCodeEditor</TokenIdentifier>
+			<Abstract type="html">GMCodeEditor is a code editing component. In general it is designed to work
+as a drop in replacement for NSTextView with very little furhter configuration
+necessary. However you can tweak it into a fairly complex code editing component.</Abstract>
+			<DeclaredIn>GMCodeEditor.h</DeclaredIn>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMCodeEditor/language</TokenIdentifier>
+			<Abstract type="html">The language definition that is currently being edited.</Abstract>
+			<DeclaredIn>GMCodeEditor.h</DeclaredIn>			
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/GMLanguage</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSDictionary *)language</Declaration>
+			
+			<ReturnValue><Abstract type="html">A dictionary of a language definition.</Abstract></ReturnValue>
+			<Anchor>//api/name/language</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMCodeEditor/setLanguage:</TokenIdentifier>
+			<Abstract type="html">Set the language to use for editing and syntax highlighting.</Abstract>
+			<DeclaredIn>GMCodeEditor.h</DeclaredIn>			
+			
+			<Declaration>- (void)setLanguage:(id)lang</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>lang</Name>
+					<Abstract type="html">Either a string in which case [GMLanguage languageFromBundleWithName:] will be called, otherwise a dictionary which should be the language representation itself (prefferably constructed with GMLanguage class methods).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLanguage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMCodeEditor/setTabWidth:</TokenIdentifier>
+			<Abstract type="html">The number of spaces a tab press will insert and also the amount by which the indent: command will indent the code.</Abstract>
+			<DeclaredIn>GMCodeEditor.h</DeclaredIn>			
+			
+			<Declaration>@property NSUInteger tabWidth</Declaration>
+			
+			
+			<Anchor>//api/name/tabWidth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GMCodeEditor/tabWidth</TokenIdentifier>
+			<Abstract type="html">The number of spaces a tab press will insert and also the amount by which the indent: command will indent the code.</Abstract>
+			<DeclaredIn>GMCodeEditor.h</DeclaredIn>			
+			
+			<Declaration>@property NSUInteger tabWidth</Declaration>
+			
+			
+			<Anchor>//api/name/tabWidth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMCodeEditor/indent:</TokenIdentifier>
+			<Abstract type="html">Indents the selected section of text or the current line.</Abstract>
+			<DeclaredIn>GMCodeEditor.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)indent:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/indent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMCodeEditor/dedent:</TokenIdentifier>
+			<Abstract type="html">Dedents the selected section of text or the current line by one level.</Abstract>
+			<DeclaredIn>GMCodeEditor.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)dedent:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/dedent:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMCodeEditor/toggleComments:</TokenIdentifier>
+			<Abstract type="html">Inspects the current selection and toggles comments.</Abstract>
+			<DeclaredIn>GMCodeEditor.h</DeclaredIn>			
+			
+			<Declaration>- (IBAction)toggleComments:(id)sender</Declaration>
+			
+			
+			<Anchor>//api/name/toggleComments:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GMCodeEditor/scrollToLine:</TokenIdentifier>
+			<Abstract type="html">Scrolls the completion view to the line given and sets the insertion point to the begening of that line.</Abstract>
+			<DeclaredIn>GMCodeEditor.h</DeclaredIn>			
+			
+			<Declaration>- (void)scrollToLine:(NSUInteger)num</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>num</Name>
+					<Abstract type="html">The line number to scroll to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/scrollToLine:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

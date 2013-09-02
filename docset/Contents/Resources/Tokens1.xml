@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="docs/Guides/Autocompletion.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/doc/Autocompletion</TokenIdentifier>
+			<Abstract type="html">Autocomplete Text View Programming Guide
+========================================</Abstract>
+			<DeclaredIn>Autocompletion-template.md</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>
