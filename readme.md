@@ -14,6 +14,14 @@ This project is a code editing component for objective-C applications. My main m
 - Theme-able
 - Well documented
 
+## Try me! ##
+
+
+Download the sample project that shows off the component (it's a text editor).
+
+<p><a href="https://github.com/gampleman/GMCodeEditor/releases/download/0.1.0/Code.Editor.zip" class="button">Download App</a></p>
+
+
 ## Subcomponents
 
 GMCodeEditor has two subcomponents that are independent and may be used individually without anything else. The first is **GMSyntaxHighlighter**, a lightweight syntax highlighter written in objective-C and inspired by [prism.js](http://prismjs.com). It takes a string, a language description  and a theme and produces an NSAttributedString with appropriate attributes for syntax highlighting. It can also optionally produce html.
