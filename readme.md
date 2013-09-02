@@ -30,9 +30,9 @@ The other is **GMAutoCompleteTextView**, which is an NSTextView subclass that al
 
 ## Installation
 
-GMCodeEditor is designed to be used with [CocoaPods](http://cocoapods.org). You can install it by adding `pod 'GMCodeEditor'` into your Podfile and running `$ pod install`. You can install the language files that are included in the project by adding `pod 'GMCodeEditor/LanguageSupport` to your pod file.
+GMCodeEditor is designed to be used with [CocoaPods](http://cocoapods.org). You can install it by adding `pod 'GMCodeEditor'` into your Podfile and running `$ pod install`. You can install the language files that are included in the project by adding `pod 'GMCodeEditor/LanguageSupport'` to your pod file.
 
-To install only GMSyntaxHighlighter put `pod 'GMCodeEditor/GMSyntaxHighlighter'` into your Podfile. To install GMAutoCompleteTextView add `pod 'pod 'GMCodeEditor/GMAutoCompleteTextView'`.
+To install only GMSyntaxHighlighter put `pod 'GMCodeEditor/GMSyntaxHighlighter'` into your Podfile. To install GMAutoCompleteTextView add `pod 'GMCodeEditor/GMAutoCompleteTextView'`.
 
 ## Usage
 
