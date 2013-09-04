@@ -2,4 +2,4 @@ xcodeproj 'Code Editor.xcodeproj'
 
 platform :osx
 
-pod "NoodleKit/NoodleLineNumberView"
+podspec :path => 'GMCodeEditor.podspec'
