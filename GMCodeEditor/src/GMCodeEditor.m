@@ -65,10 +65,16 @@
   _syntaxHighlighter.language =  [GMLanguage languageFromBundleWithName: @"css"];
   GMTheme *theme = [GMTheme themeFromBundleWithName: @"okaida"];
   _syntaxHighlighter.theme = theme;
-  [self setBackgroundColor: theme.defaultAttributes[NSBackgroundColorDocumentAttribute]];
-  [self setInsertionPointColor: theme.defaultAttributes[NSForegroundColorAttributeName]];
+  if (@available(macOS 10.8, *)) {
+      [self setBackgroundColor: theme.defaultAttributes[NSBackgroundColorDocumentAttribute]];
+      [self setInsertionPointColor: theme.defaultAttributes[NSForegroundColorAttributeName]];
+  } else {
+      // Fallback on earlier versions
+  }
   [[self textStorage] setAttributedString: [_syntaxHighlighter highlight: [self string]]];
   _tabWidth = 4;
+    
+  self.automaticQuoteSubstitutionEnabled = NO;
   
 }
 
@@ -389,8 +395,7 @@
 
 - (BOOL)changeSelectedNumberByDelta:(NSInteger)d {
   NSRange r   = [self selectedRange];
-  NSUInteger position = r.location == self.attributedString.length ? r.location - 1 : r.location;
-  NSString *token = [self.attributedString attribute: @"GMToken" atIndex: position longestEffectiveRange:&r inRange:NSMakeRange(0, self.attributedString.length)];
+  NSString *token = [self.attributedString attribute: @"GMToken" atIndex:r.location longestEffectiveRange:&r inRange:NSMakeRange(0, self.attributedString.length)];
   if ([token isEqualToString: @"number"]) {
     NSString *s = [[[self textStorage] mutableString] substringWithRange:r];
     NSInteger i = [s integerValue];
